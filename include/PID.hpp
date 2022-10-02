@@ -2,7 +2,7 @@
  * @file PID.hpp
  * @author Adarsh Malapaka (adarshmalapaka98@gmail.com)
  * @brief Class definition for the PID controller.
- * @version 0.1
+ * @version 0.2
  * @date 2022-10-02
  * @copyright Copyright (c) 2022
  * 
@@ -37,6 +37,13 @@ class PID {
      * @param kd Derivative Gain 
      */
     void set_Kd(double kd);
+
+    /**
+     * @brief Set the dt value.
+     * 
+     * @param dt small time change (sec)
+     */
+    void set_dt(double dt);
 
     /**
      * @brief Computes PID control action on the error.
