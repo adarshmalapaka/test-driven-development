@@ -22,7 +22,7 @@ using std::endl;
  * @return int 0
  */
 int main() {
-    double kp, ki, kd, dt, ref_vel;
+    double kp, ki, kd, dt, ref_vel, vel = 0;
 
     PID pid;
     cout << "Enter value of Kp: ";
@@ -45,5 +45,5 @@ int main() {
     cout << "\nEnter the desired velocity: ";
     cin >> ref_vel;
     cout << "The final controlled velocity: "
-    << pid.compute(ref_vel, 0) << endl;
+    << pid.compute(ref_vel, vel) << endl;
 }
