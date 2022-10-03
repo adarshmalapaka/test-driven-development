@@ -50,8 +50,9 @@ class PID {
     double set_dt(double dt);
 
     /**
-     * @brief Computes PID control action on the error.
-     * 
+     * @brief Computes PID control action on the error until the error converges to 
+     * a small threshold value of 0.01. Returns the new velocity of the mobile robot. 
+     *      
      * @param ref_vel Reference Velocity (m/s)
      * @param vel Current Velocity (m/s)
      * @return double Control action (m/s) 
