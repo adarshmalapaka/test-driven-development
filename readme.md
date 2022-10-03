@@ -1,3 +1,5 @@
+[![Build Status](https://app.travis-ci.com/adarshmalapaka/test-driven-development.svg?branch=main)](https://app.travis-ci.com/adarshmalapaka/test-driven-development)
+
 # Test-Driven Development - Group 3
 
 ## Overview
