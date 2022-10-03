@@ -21,29 +21,33 @@ class PID {
     * @brief Sets the Kp gain
     * 
     * @param kp Proportional Gain
+    * @return double Proportional Gain
     */
-    void set_Kp(double kp);
+    double set_Kp(double kp);
 
     /**
      * @brief Sets the Ki gain
      * 
      * @param ki Integral Gain
+     * @return double Integral Gain
      */
-    void set_Ki(double ki);
+    double set_Ki(double ki);
 
     /**
      * @brief Sets the Kd gain
      * 
      * @param kd Derivative Gain 
+     * @return double Derivative Gain
      */
-    void set_Kd(double kd);
+    double set_Kd(double kd);
 
     /**
      * @brief Set the dt value.
      * 
      * @param dt small time change (sec)
+     * @return double small time change
      */
-    void set_dt(double dt);
+    double set_dt(double dt);
 
     /**
      * @brief Computes PID control action on the error.

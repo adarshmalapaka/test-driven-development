@@ -11,20 +11,24 @@
 
 #include "../include/PID.hpp"
 
-void PID::set_Kp(double kp) {
-    m_K_p = kp;
+double PID::set_Kp(double kp) {
+    m_K_p = 0;
+    return m_K_p;
 }
 
-void PID::set_Ki(double ki) {
-    m_K_i = ki;
+double PID::set_Ki(double ki) {
+    m_K_i = 0;
+    return m_K_i;
 }
 
-void PID::set_Kd(double kd) {
-    m_K_d = kd;
+double PID::set_Kd(double kd) {
+    m_K_d = 0;
+    return m_K_d;
 }
 
-void PID::set_dt(double dt) {
-    m_dt = dt;
+double PID::set_dt(double dt) {
+    m_dt = 0;
+    return m_dt;
 }
 
 double PID::compute(double ref_vel, double vel) {
