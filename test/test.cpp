@@ -12,6 +12,10 @@
 
 #include "../include/PID.hpp"
 
+/**
+ * @brief Test function to check the setting of gains and dt.
+ * 
+ */
 TEST(PID, checkGains) {
   PID pid;
   EXPECT_DOUBLE_EQ(pid.set_Kp(10), 10);
@@ -20,6 +24,10 @@ TEST(PID, checkGains) {
   EXPECT_DOUBLE_EQ(pid.set_dt(0.01), 0.01);
 }
 
+/**
+ * @brief Test function to verify PID output for unequal desired & actual velocities.
+ * 
+ */
 TEST(PID, compute1) {
   PID pid;
   pid.set_Kp(10);
@@ -29,6 +37,10 @@ TEST(PID, compute1) {
   EXPECT_NEAR(pid.compute(15, 0), 15, 0.01);
 }
 
+/**
+ * @brief Test function to verify PID output for zero desired & actual velocities.
+ * 
+ */
 TEST(PID, compute2) {
   PID pid;
   pid.set_Kp(5);
@@ -38,6 +50,10 @@ TEST(PID, compute2) {
   EXPECT_NEAR(pid.compute(0, 0), 0, 0.01);
 }
 
+/**
+ * @brief Test function to verify PID output for non-zero equal desired & actual velocities.
+ * 
+ */
 TEST(PID, compute3) {
   PID pid;
   pid.set_Kp(1);
