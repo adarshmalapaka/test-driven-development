@@ -29,7 +29,7 @@ make code_coverage
 ## Run
 
 1. Once inside the `/build` directory as done above, run: `./app/pid`
-2. To run Google Test: `./test/cpp-test`
+2. To run Google Test: `./test/pid-test`
 
 ## cpplint
 
