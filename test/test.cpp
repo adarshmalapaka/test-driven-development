@@ -4,9 +4,9 @@
  * @brief Code for unit testing purposes
  * @version 0.1
  * @date 2022-10-02
- * 
+ *
  * @copyright Copyright (c) 2022
- * 
+ *
  */
 #include <gtest/gtest.h>
 
@@ -14,7 +14,7 @@
 
 /**
  * @brief Test function to check the setting of gains and dt.
- * 
+ *
  */
 TEST(PID, checkGains) {
   PID pid;
@@ -25,12 +25,13 @@ TEST(PID, checkGains) {
 }
 
 /**
- * @brief Test function to verify PID output for unequal desired & actual velocities.
- * 
+ * @brief Test function to verify PID output for unequal desired & actual
+ * velocities.
+ *
  */
 TEST(PID, compute1) {
   PID pid;
-  pid.set_Kp(10);
+  pid.set_Kp(5);
   pid.set_Ki(10);
   pid.set_Kd(10);
   pid.set_dt(0.01);
@@ -38,8 +39,9 @@ TEST(PID, compute1) {
 }
 
 /**
- * @brief Test function to verify PID output for zero desired & actual velocities.
- * 
+ * @brief Test function to verify PID output for zero desired & actual
+ * velocities.
+ *
  */
 TEST(PID, compute2) {
   PID pid;
@@ -51,8 +53,9 @@ TEST(PID, compute2) {
 }
 
 /**
- * @brief Test function to verify PID output for non-zero equal desired & actual velocities.
- * 
+ * @brief Test function to verify PID output for non-zero equal desired & actual
+ * velocities.
+ *
  */
 TEST(PID, compute3) {
   PID pid;

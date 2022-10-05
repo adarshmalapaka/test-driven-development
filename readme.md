@@ -9,6 +9,10 @@ Implementation of a PID controller for an imaginary company, Acme Robotics using
 - Driver: Adarsh Malapaka (UID: 118119625) 
 - Navigator: Sanchit Kedia (UID: 119159620)
 
+## Part2: Team 2 Members
+- Driver: Rishabh Singh (UID: 117511208)
+- Navigator: Vishaal Kanna (UID: 117764314)
+
 # Compilation
 ```
 cd test-driven-development
@@ -46,3 +50,7 @@ Change to the `root` directory, and run:
 ```
 cppcheck --enable=all --std=c++11 --suppress=missingIncludeSystem . --suppress=unmatchedSuppression $( find . -name *.cpp | grep -vE -e "^./build/" ) --force --output-file=../results/cppcheck.txt
 ```
+## notes and todo statements
+- User handling for gain values and test cases required
+- The gain values in the test cases were high and did not allow the error to converge
+- Test cases compute 2 and compute 3 seems redundant 
