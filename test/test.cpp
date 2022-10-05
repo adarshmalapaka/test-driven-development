@@ -10,7 +10,7 @@
  */
 #include <gtest/gtest.h>
 
-#include "../include/PID.hpp"
+#include "PID.hpp"
 
 /**
  * @brief Test function to check the setting of gains and dt.
