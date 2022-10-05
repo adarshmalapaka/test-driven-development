@@ -1,6 +1,6 @@
 /**
  * @file PID.cpp
- * @author Adarsh Malapaka (adarshmalapaka98@gmail.com)
+ * @author Adarsh Malapaka (adarshmalapaka98@gmail.com), Sanchit Kedia (sanchit@terpmail.umd.edu)
  * @brief Implementation of the methods of PID class.
  * @version 0.1
  * @date 2022-10-02
@@ -12,6 +12,13 @@
 #include "../include/PID.hpp"
 
 #include <cmath>
+
+PID::PID() {
+  m_K_p = 0.0;
+  m_K_i = 0.0;
+  m_K_d = 0.0;
+  m_dt = 0.0;
+}
 
 double PID::set_Kp(double kp) {
   m_K_p = kp;

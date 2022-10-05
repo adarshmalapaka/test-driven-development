@@ -1,6 +1,6 @@
 /**
  * @file main.cpp
- * @author Adarsh Malapaka (adarshmalapaka98@gmail.com)
+ * @author Adarsh Malapaka (adarshmalapaka98@gmail.com), Sanchit Kedia (sanchit@terpmail.umd.edu)
  * @brief
  * @version 0.1
  * @date 2022-10-02

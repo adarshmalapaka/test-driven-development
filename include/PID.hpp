@@ -1,6 +1,6 @@
 /**
  * @file PID.hpp
- * @author Adarsh Malapaka (adarshmalapaka98@gmail.com)
+ * @author Adarsh Malapaka (adarshmalapaka98@gmail.com), Sanchit Kedia (sanchit@terpmail.umd.edu)
  * @brief Class definition for the PID controller.
  * @version 0.2
  * @date 2022-10-02
@@ -17,6 +17,12 @@
  */
 class PID {
  public:
+  /**
+   * @brief Construct a new PID object to assign default values to the PID gains and dt
+   * 
+   */
+  PID();
+
   /**
    * @brief Sets the Kp gain
    *

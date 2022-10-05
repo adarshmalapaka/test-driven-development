@@ -1,6 +1,6 @@
 /**
  * @file test.cpp
- * @author Adarsh Malapaka (adarshmalapaka98@gmail.com)
+ * @author Adarsh Malapaka (adarshmalapaka98@gmail.com), Sanchit Kedia (sanchit@terpmail.umd.edu)
  * @brief Code for unit testing purposes
  * @version 0.1
  * @date 2022-10-02
