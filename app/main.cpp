@@ -10,7 +10,7 @@
  */
 #include <iostream>
 
-#include "../include/PID.hpp"
+#include "PID.hpp"
 
 using std::cin;
 using std::cout;
