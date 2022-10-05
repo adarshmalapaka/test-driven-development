@@ -53,4 +53,4 @@ cppcheck --enable=all --std=c++11 --suppress=missingIncludeSystem . --suppress=u
 ## notes and todo statements
 - User handling for gain values and test cases required
 - The gain values in the test cases were high and did not allow the error to converge
-- Test cases compute 2 and compute 3 seems redundant 
+- Test cases compute 2 and compute 3 seems redundant

@@ -31,9 +31,9 @@ TEST(PID, checkGains) {
  */
 TEST(PID, compute1) {
   PID pid;
-  pid.set_Kp(5);
-  pid.set_Ki(10);
-  pid.set_Kd(10);
+  pid.set_Kp(0.4);
+  pid.set_Ki(0.3);
+  pid.set_Kd(0.2);
   pid.set_dt(0.01);
   EXPECT_NEAR(pid.compute(15, 0), 15, 0.01);
 }
