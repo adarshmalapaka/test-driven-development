@@ -43,13 +43,14 @@ Change to the `/app` directory, and run:
 cpplint main.cpp > ../results/cpplint_main.txt
 cpplint PID.cpp > ../results/cpplint_pid.txt
 cpplint ../test/test.cpp > ../results/cpplint_test.txt
+cpplint ../include/PID.hpp > ../results/cpplint_pid_hpp.txt
 ```
 
 ## cppcheck
 
 Change to the `root` directory, and run:
 ```
-cppcheck --enable=all --std=c++11 --suppress=missingIncludeSystem . --suppress=unmatchedSuppression $( find . -name *.cpp | grep -vE -e "^./build/" ) --force --output-file=../results/cppcheck.txt
+cppcheck --enable=all --std=c++11 -I include/ --suppress=missingIncludeSystem $( find . -name *.cpp | grep -vE -e "^./build/" -e "^./vendor/" ) > results/cppcheck.txt
 ```
 ## notes and todo statements
 - User handling for gain values and test cases required
