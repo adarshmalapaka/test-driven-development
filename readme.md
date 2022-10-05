@@ -15,6 +15,7 @@ Implementation of a PID controller for an imaginary company, Acme Robotics using
 
 # Compilation
 ```
+git clone https://github.com/adarshmalapaka/test-driven-development.git
 cd test-driven-development
 mkdir build && cd build
 cmake .. 
