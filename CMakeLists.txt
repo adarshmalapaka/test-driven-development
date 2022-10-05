@@ -1,4 +1,5 @@
 cmake_minimum_required(VERSION 3.2.1)
+set(CMAKE_CXX_COMPILER '/bin/g++-9')
 project (scratch)
 
 # Add project cmake modules to path.
