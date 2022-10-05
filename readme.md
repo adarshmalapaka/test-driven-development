@@ -1,4 +1,4 @@
-[![Build Status](https://app.travis-ci.com/adarshmalapaka/test-driven-development.svg?branch=main)](https://app.travis-ci.com/adarshmalapaka/test-driven-development) [![Coverage Status](https://coveralls.io/repos/github/adarshmalapaka/test-driven-development/badge.svg?branch=main)](https://coveralls.io/github/adarshmalapaka/test-driven-development?branch=main)
+[![Build Status](https://app.travis-ci.com/adarshmalapaka/test-driven-development.svg?branch=main)](https://app.travis-ci.com/adarshmalapaka/test-driven-development) [![Coverage Status](https://coveralls.io/repos/github/adarshmalapaka/test-driven-development/badge.png?branch=main)](https://coveralls.io/github/adarshmalapaka/test-driven-development?branch=main)
 
 # Test-Driven Development - Group 3
 
